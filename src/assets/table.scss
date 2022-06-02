@@ -1,0 +1,46 @@
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $color-white;
+    border: 1px solid $color-light-grey;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #46494c;
+    margin-top: 20px;
+
+   
+   
+    td,th{
+        padding: 0 20px;
+        height: 45px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    td{
+        color: $color-text-secondary;
+    }
+
+    th{
+        color: $color-text-primary;
+    }
+
+    tr:nth-child(even){
+        background-color: $color-light-grey;
+    }
+    
+    .btn{
+        background-color: transparent;
+        border: none;
+        color: $color-grey;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+   
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

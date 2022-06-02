@@ -1,0 +1,15 @@
+.page {
+  padding: $spacing-xl 0;
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacing-xl;
+
+    .page-title {
+      font-size: $font-size-xxl;
+      color: $color-text-primary;
+    }
+  }
+}

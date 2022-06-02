@@ -1,0 +1,36 @@
+.idea-details {
+  margin-bottom: $spacing-l;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .content {
+    width: 70%;
+    margin-right: $spacing-l;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: $spacing-m;
+    }
+
+    h2 {
+      font-size: $font-size-l;
+      margin-bottom: $spacing-s;
+      color: $color-text-primary;
+    }
+
+    p {
+      font-size: $font-size-m;
+      margin-bottom: $spacing-s;
+      color: $color-text-primary;
+    }
+
+
+    span {
+      font-size: $font-size-m;
+      display: block;
+      color: $color-text-secondary;
+    }
+  }
+}
