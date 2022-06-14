@@ -24,9 +24,12 @@ function Front({ show }) {
           <Link to={"/create"}> Registration form</Link>
         </div>
         <div className="ideas">
-          {goals.map((goal) => (
-            <IdeaLine key={goal.id} goal={goal}></IdeaLine>
-          ))}
+          {
+            goals.map(goal => (
+              goal.approved === 1 ?
+              <IdeaLine key={goal.id} goal={goal}></IdeaLine> : '' 
+            ))
+          }
         </div>
       </div>
     </div>

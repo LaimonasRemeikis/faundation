@@ -6,7 +6,7 @@ function IdeaLine({ goal }) {
   return (
     <div className="idea">
       <Link to={"/goal/" + goal.id}>
-        <img src={goal.photo} alt={goal.title} />
+        {goal.photo ? (<img className='img' src={goal.photo} alt="img"></img>) : (<div className="filler-poster"></div>)}
         <h2> {goal.title}</h2>
         <p>{goal.description}</p>
         <span>

@@ -26,8 +26,8 @@ function Patrons({ id, lastUpdated }) {
           </tr>
         </thead>
         <tbody>
-            {patrons.map((patron)=> (
-                <tr>
+            {patrons.map((patron) => (
+                <tr key={patron.id}>
                     <td>{patron.id}</td>
                     <td>{patron.name}</td>
                     <td>{patron.fund_sum.toFixed(2)} $</td>

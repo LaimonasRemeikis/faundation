@@ -4,12 +4,9 @@ import IdeaLine from "./IdeaLine";
 import Modal from "./Modal";
 import "../assets/admin.scss";
 
-
-
 function Back() {
   const [lastUpdate, setLastUpdate] = useState(Date.now());
 
- 
   const [editData, setEditData] = useState(null);
   const [deleteId, setDeleteId] = useState(null);
   const [modalData, setModalData] = useState(null);
@@ -23,8 +20,6 @@ function Back() {
       setGoals(res.data);
     });
   }, [lastUpdate]);
-
-
 
   //Edit
   useEffect(() => {
@@ -56,15 +51,16 @@ function Back() {
     <>
       <div className="back-container">
         <div className="table-container">
-        <div className="header">
-        <h1 id="title">Charity list</h1>
-      </div>
+          <div className="header">
+            <h1 id="title">Charity list</h1>
+          </div>
           <table className="table">
             <thead>
               <tr>
                 <th>Title</th>
                 <th>Description</th>
                 <th>total_amount</th>
+                <th>Approved</th>
                 <th>Actions</th>
               </tr>
             </thead>

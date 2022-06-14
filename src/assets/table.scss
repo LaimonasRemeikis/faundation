@@ -6,6 +6,7 @@
     border-radius: 15px;
     box-shadow: 0 0 6px #46494c;
     margin-top: 20px;
+    padding: 50px;
 
    
    
@@ -18,6 +19,9 @@
 
     td{
         color: $color-text-secondary;
+    }
+    th:nth-child(n+4){
+        text-align: center;
     }
 
     th{
@@ -34,6 +38,19 @@
         color: $color-grey;
         font-size: 14px;
         margin-right: 8px;
+    }
+
+    .btn-red{
+
+        background-color: transparent;
+        border: none;
+        color: red;
+         font-size: 14px;
+        margin-right: 8px;
+        height: 36px;
+        width: 100%;
+        display: block;
+        cursor: pointer;
     }
    
 }
